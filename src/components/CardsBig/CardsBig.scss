@@ -1,0 +1,47 @@
+@import "../../variables.module.scss";
+
+.big-card {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 34px;
+    font-size: 16px;
+  }
+
+  &-top {
+    margin-bottom: 30px;
+  }
+
+  &-top-left__date {
+    color: $disabled-color;
+    margin-bottom: 10px;
+  }
+
+  &-top-left__title {
+    color: var(--text-theme-color);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue-accent-color;
+      ;
+    }
+  }
+
+  &-top-left__text {
+    color: $disabled-color;
+    font-size: 16px;
+  }
+
+  &-top__image {
+    height: 244px;
+    width: 244px;
+    object-fit: cover;
+  }
+}

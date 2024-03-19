@@ -1,0 +1,28 @@
+@import "../../variables.module.scss";
+
+.tabs {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 65px;
+  display: flex;
+
+  &__item {
+    display: block;
+    padding: 0 40px 24px 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-theme-color);
+
+    &_active:active {
+      border-bottom: 2px solid $text-color;
+    }
+
+    &_hover:hover {
+      color: $blue-accent-color;
+    }
+
+    &_disabled:disabled {
+      color: $disabled-color;
+    }
+  }
+}

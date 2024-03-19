@@ -1,0 +1,13 @@
+@import "../../variables.module.scss";
+
+.icon-button {
+  cursor: pointer;
+
+  svg {
+    height: 24px;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

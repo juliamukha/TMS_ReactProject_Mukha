@@ -1,0 +1,60 @@
+@import "./variables.module.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+main,
+section {
+    display: block;
+}
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.main {
+    margin-top: $header-height;
+    padding: 72px 0;
+    background-color: var(--background-theme-color);
+}
+
+.icon-button {
+    background-color: transparent;
+    cursor: pointer;
+
+    &.icon-button_hover-blue:hover svg {
+        color: $blue-accent-color;
+    }
+
+    &.icon-button_hover-red:hover svg {
+        color: $red-color;
+    }
+}

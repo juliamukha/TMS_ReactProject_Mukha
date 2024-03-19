@@ -1,0 +1,15 @@
+@import "../../variables.module.scss";
+
+.breadcrumbs {
+  margin-bottom: 32px;
+
+  &__item {
+    color: var(--text-theme-color);
+    font-size: 16px;
+    font-weight: normal;
+
+    &:hover {
+      color: $blue-accent-color;
+    }
+  }
+}

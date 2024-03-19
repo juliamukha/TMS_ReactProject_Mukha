@@ -1,0 +1,45 @@
+@import "../../variables.module.scss";
+
+.input-holder {
+    &__label {
+        color: $black-color;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    &__input {
+        color: $black-color;
+        font-size: 16px;
+        background-color: $white-color;
+        border: 1px solid $white-color;
+        padding: 0 20px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+
+        &::placeholder {
+            font-size: 16px;
+            color: $disabled-color;
+        }
+
+        &:focus {
+            border-color: $grey-hover-color;
+        }
+
+        &:disabled {
+            background-color: $grey-color;
+            border-color: $grey-color;
+            color: $disabled-color;
+        }
+
+        &.error {
+            border-color: $red-color;
+        }
+    }
+
+    &__error {
+        color: $red-color;
+        font-size: 16px;
+    }
+}

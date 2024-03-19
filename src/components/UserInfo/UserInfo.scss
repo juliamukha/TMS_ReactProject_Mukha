@@ -1,0 +1,30 @@
+@import "../../variables.module.scss";
+
+.user-info {
+    height: 100%;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $white-color;
+    border-left: 1px solid $blue-accent-color;
+
+    &__logo,
+    &__name {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    &__logo {
+        height: 48px;
+        min-width: 48px;
+        padding: 0 10px;
+        display: flex;
+        background-color: $blue-accent-color;
+        align-items: center;
+        justify-content: center;
+    }
+}

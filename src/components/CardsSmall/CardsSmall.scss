@@ -1,0 +1,40 @@
+@import "../../variables.module.scss";
+
+.small-card {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 34px;
+    font-size: 16px;
+  }
+
+  &-top {
+    margin-bottom: 25px;
+  }
+
+  &-top-left__date {
+    color: $disabled-color;
+    margin-bottom: 10px;
+  }
+
+  &-top-left__title {
+    color: var(--text-theme-color);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue-accent-color;
+    }
+  }
+
+  &-top__image {
+    height: 96px;
+    width: 96px;
+    object-fit: cover;
+  }
+}

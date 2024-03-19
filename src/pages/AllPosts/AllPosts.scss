@@ -1,0 +1,44 @@
+@import "../../variables.module.scss";
+
+.cards-holder {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.small-cards-holder {
+  width: calc(100%/3 - 16px);
+}
+
+.big-cards-holder {
+  width: calc(100%*2/3 - 16px);
+}
+
+.middle-cards-holder {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 34px;
+  font-size: 16px;
+
+  .icon-button svg {
+    height: 22px;
+    color: $text-color;
+  }
+
+  .count {
+    color: $text-color;
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 25px;
+  }
+
+  .more-icon {
+    margin-left: 25px;
+  }
+}

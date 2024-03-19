@@ -1,0 +1,34 @@
+@import "../../variables.module.scss";
+
+.middle-card {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  width: calc(50% - 16px);
+
+  &-top {
+    margin-bottom: 25px;
+  }
+
+  &-top-left__date {
+    color: $disabled-color;
+    margin-bottom: 10px;
+  }
+
+  &-top-left__title {
+    color: var(--text-theme-color);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue-accent-color;
+    }
+  }
+
+  &-top__image {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 25px;
+  }
+}

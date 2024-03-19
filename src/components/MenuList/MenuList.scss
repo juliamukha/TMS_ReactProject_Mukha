@@ -1,0 +1,23 @@
+@import "../../variables.module.scss";
+
+.menu-item {
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        border-bottom: 1px solid $border-color;
+        font-size: 16px;
+        font-weight: 600;
+        color: $text-color;
+
+        &:hover {
+            color: $blue-color;
+        }
+
+        &.active {
+            color: $blue-color;
+            cursor: default;
+        }
+    }
+}

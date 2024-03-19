@@ -1,0 +1,36 @@
+@import "../../variables.module.scss";
+
+.button {
+  border: none;
+  border-radius: 0;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &_primary {
+    background: $blue-color;
+    color: $white-color;
+
+    &:hover {
+      background-color: $blue-accent-color;
+    }
+  }
+
+  &_secondary {
+    background: $grey-color;
+    color: $text-color;
+
+    &:hover {
+      background-color: $grey-hover-color;
+    }
+  }
+
+  &_primary:disabled,
+  &_secondary:disabled {
+    background-color: $grey-color;
+    color: $disabled-color;
+    cursor: not-allowed;
+  }
+}
